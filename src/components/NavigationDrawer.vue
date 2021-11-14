@@ -12,7 +12,7 @@
           :value="brands.query"
           clearable
           prepend-inner-icon="mdi-magnify"
-          placeholder="Search by brand name"
+          placeholder="Search for brand"
           hide-details
           class="mt-3"
           @input="handleInputQuery"
