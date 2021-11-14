@@ -7,6 +7,10 @@
 <script>
 export default {
   name: "Home",
-  components: {},
+
+  async created() {
+    const res = await this.$api.get("/brands");
+    console.log(res);
+  },
 };
 </script>

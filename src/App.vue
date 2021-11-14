@@ -1,15 +1,14 @@
 <template>
   <v-app>
+    <v-navigation-drawer v-model="showDrawer" app>
+      <!-- -->
+    </v-navigation-drawer>
+
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+        <v-btn icon @click="showDrawer = !showDrawer" class="me-2">
+          <v-icon>mdi-menu</v-icon>
+        </v-btn>
 
         Mobile Mart
       </div>
@@ -33,7 +32,7 @@ export default {
   name: "App",
 
   data: () => ({
-    //
+    showDrawer: null,
   }),
 };
 </script>
