@@ -29,3 +29,7 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### API
+
+This project uses [public phone specs APIs](https://github.com/azharimm/phone-specs-api) developed by [azharimm](https://github.com/azharimm).
