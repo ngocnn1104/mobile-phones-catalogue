@@ -35,7 +35,7 @@ export default new Vuex.Store({
     },
 
     updateCart(state, item) {
-      const phoneIndex = state.cart.find(phone => phone.slug === item.slug);
+      const phoneIndex = state.cart.findIndex(phone => phone.slug === item.slug);
       if (phoneIndex >= 0) {
         const currentQuantity = state.cart[phoneIndex].quantity;
         state.cart.splice(phoneIndex, 1, {
